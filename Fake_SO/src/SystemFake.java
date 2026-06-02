@@ -233,7 +233,11 @@ Commands:
         String backA = "\nCommand Done\n";
         switch(action){
             case "open manual.pdf":
-                manual();
+                if (mn == true) {
+                    manual();
+                }else{
+                    System.out.println("Not found");
+                }
                 break;
             case "clear":
                 clearScreen();
@@ -365,6 +369,10 @@ Commands:
                     countF -= 1;
                     space.remove(nameF);
                     folder3.clear();
+                    memory.setMemory(memory.getMemory() - 1);
+                } else if (nameF.equals("Manual.pdf")) {
+                    mn = false;
+                    space.remove(nameF);
                     memory.setMemory(memory.getMemory() - 1);
                 }
                 break;
