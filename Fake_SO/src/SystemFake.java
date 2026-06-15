@@ -361,14 +361,14 @@ Commands:
                     memory.setMemory((memory.getMemory() - 1) - pq);
                 } else if(nameF.equals("Folder_2") && f2 == true){
                     f2 = false;
-                    int pq = folder1.size();
+                    int pq = folder2.size();
                     countF -= 1;
                     space.remove(nameF);
                     folder2.clear();
                     memory.setMemory((memory.getMemory() - 1) - pq);
                 } else if(nameF.equals("Folder_3") && f3 == true){
                     f3 = false;
-                    int pq = folder1.size();
+                    int pq = folder3.size();
                     countF -= 1;
                     space.remove(nameF);
                     folder3.clear();
