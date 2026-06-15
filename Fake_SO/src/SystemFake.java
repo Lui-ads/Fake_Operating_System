@@ -104,7 +104,7 @@ Commands:
         System.out.print(".");
         Thread.sleep(200);
         space.add("Manual.pdf");
-        memory.setMemory(memory.getMemory() + 4);
+        memory.setMemory(memory.getMemory() + 4); // 3MB to System and 1MB to Manual.pdf
         clearScreen();
     }
 
